@@ -15,12 +15,12 @@ public class EjercicioDescuentoCompra {
 		compra= sc.nextDouble();
 		//System.out.println("La venta es de: "+ venta);
 		
-		if(compra>=1000 || compra>5000 ){
+		if(compra>=1000 && compra<5000 ){
 			System.out.println("Tu descuento es de el 10%");
 			descuento=(double) (compra*0.10);
 			total = compra - descuento;
 			System.out.println("Tu total a pagar es de:" + total);
-		}else if(compra>=5000 || compra>10000 ){
+		}else if(compra>=5000 && compra<10000 ){
 			System.out.println("Tu descuento es de el 20%");
 			descuento=(double) (compra*0.20);
 			total = compra - descuento;
@@ -32,10 +32,7 @@ public class EjercicioDescuentoCompra {
 			System.out.println("Tu total a pagar es de:" + total);
 		}else {
 			System.out.println("No tienes descuento");
-		}
-			
-			
-			
+		}	
 			
 	}
 
